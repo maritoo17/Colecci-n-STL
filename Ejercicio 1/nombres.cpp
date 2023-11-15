@@ -13,6 +13,9 @@ namespace Matematicas {
     int division(int a, int b) {
         if (b != 0) {
             return a / b;
+        } else {
+            std::cout << "Error: ¡División por cero!" << std::endl;
+            return 0;
         }
     }
     int cuadrado(int a) {
