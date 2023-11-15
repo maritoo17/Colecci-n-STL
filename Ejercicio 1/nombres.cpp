@@ -24,7 +24,10 @@ namespace Matematicas {
     }
     double logaritmo(double a) {
         if (a > 0) {
-            return log10(a);
+            return std::log(a);
+        } else {
+            std::cout << "Error: ¡Logaritmo de un número negativo!" << std::endl;
+            return 0;
         }
     }
 }
